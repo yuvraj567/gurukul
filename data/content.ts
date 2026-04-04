@@ -40,10 +40,14 @@ export interface ContentData {
   };
   contactForm: {
     heading: string;
+    description: string;
     name: string;
     mobile: string;
     classLabel: string;
     submit: string;
+    placeholderName: string;
+    placeholderMobile: string;
+    selectPlaceholder: string;
   };
   footer: {
     contactTitle: string;
@@ -130,10 +134,14 @@ export const content: Record<Language, ContentData> = {
     },
     contactForm: {
       heading: 'Get In Touch',
+      description: 'Fill out the form and we will get back to you on WhatsApp or phone shortly.',
       name: 'Full Name',
       mobile: 'Mobile Number',
       classLabel: 'Class Interested In',
       submit: 'Send via WhatsApp',
+      placeholderName: 'Enter your full name',
+      placeholderMobile: 'Enter your mobile number',
+      selectPlaceholder: 'Select Class',
     },
     footer: {
       contactTitle: 'Contact Information',
@@ -216,11 +224,17 @@ export const content: Record<Language, ContentData> = {
         },
       ],
     },
-    contactForm: {      heading: 'हमसे संपर्क करें',
+    contactForm: {
+      heading: 'हमसे संपर्क करें',
+      description: 'फ़ॉर्म भरें और हम आपको व्हाट्सएप या फ़ोन पर शीघ्र ही संपर्क करेंगे।',
+
       name: 'पूरा नाम',
       mobile: 'मोबाइल नंबर',
       classLabel: 'कक्षा रुचि',
       submit: 'व्हाट्सऐप पर भेजें',
+      placeholderName: 'अपना पूरा नाम दर्ज करें',
+      placeholderMobile: 'अपना मोबाइल नंबर दर्ज करें',
+      selectPlaceholder: 'कक्षा चुनें',
     },
     footer: {
       contactTitle: 'संपर्क जानकारी',

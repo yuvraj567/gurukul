@@ -36,10 +36,14 @@ export default function Home() {
       <Testimonials heading={strings.testimonials.heading} testimonials={strings.testimonials.items} />
       <ContactForm
         heading={strings.contactForm.heading}
+        description={strings.contactForm.description}
         nameLabel={strings.contactForm.name}
         mobileLabel={strings.contactForm.mobile}
         classLabel={strings.contactForm.classLabel}
         submitLabel={strings.contactForm.submit}
+        placeholderName={strings.contactForm.placeholderName}
+        placeholderMobile={strings.contactForm.placeholderMobile}
+        selectPlaceholder={strings.contactForm.selectPlaceholder}
       />
       <Footer
         contactTitle={strings.footer.contactTitle}

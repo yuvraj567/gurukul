@@ -1,4 +1,5 @@
 import React from 'react';
+import { Phone, MessageCircle, Mail } from 'lucide-react';
 
 interface FooterProps {
   contactTitle: string;
@@ -14,11 +15,39 @@ const Footer: React.FC<FooterProps> = ({ contactTitle, locationTitle, address, p
     <footer className="bg-white text-violet-900 py-12 border-t border-violet-100">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-2xl font-bold mb-4">{contactTitle}</h3>
-            <p className="mb-2">{address}</p>
-            <p className="mb-2">{phone}</p>
-            <p>{email}</p>
+          <div className="space-y-5">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">{contactTitle}</h3>
+              <p className="text-gray-600">For admission help, fee details, or campus visits, reach out by phone, WhatsApp, or email.</p>
+            </div>
+            <div className="space-y-3">
+              <a href="tel:+919631864871" className="flex items-start gap-3 rounded-2xl border border-violet-100 bg-violet-50 p-4 transition hover:border-violet-300 hover:bg-white">
+                <Phone className="h-6 w-6 text-rose-900" />
+                <div>
+                  <p className="text-sm font-semibold text-gray-700">Phone</p>
+                  <p className="text-base font-bold text-violet-900">{phone}</p>
+                </div>
+              </a>
+              <a
+                href="https://wa.me/919631864871?text=Namaste%2C%20mujhe%20Gurukul%20Public%20School%20ke%20baare%20mein%20jaankari%20chahiye"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-3 rounded-2xl border border-violet-100 bg-emerald-50 p-4 transition hover:border-emerald-300 hover:bg-white"
+              >
+                <MessageCircle className="h-6 w-6 text-emerald-600" />
+                <div>
+                  <p className="text-sm font-semibold text-gray-700">WhatsApp</p>
+                  <p className="text-base font-bold text-emerald-700">Chat with us</p>
+                </div>
+              </a>
+              <a href={`mailto:${email}`} className="flex items-start gap-3 rounded-2xl border border-violet-100 bg-sky-50 p-4 transition hover:border-sky-300 hover:bg-white">
+                <Mail className="h-6 w-6 text-sky-600" />
+                <div>
+                  <p className="text-sm font-semibold text-gray-700">Email</p>
+                  <p className="text-base font-bold text-sky-700">{email}</p>
+                </div>
+              </a>
+            </div>
           </div>
           <div>
             <h3 className="text-2xl font-bold mb-4">{locationTitle}</h3>

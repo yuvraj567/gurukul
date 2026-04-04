@@ -43,7 +43,7 @@ const Courses: React.FC<CoursesProps> = ({ heading, admissionCTA, cards }) => {
         </div>
         <div className="text-center">
           <a
-            href="https://wa.me/91XXXXXXXXXX?text=Namaste%2C%20Admission%20ke%20bare%20me%20jaanna%20chahunga"
+            href="https://wa.me/919631864871?text=Namaste%2C%20Admission%20ke%20bare%20me%20jaanna%20chahunga"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-5 rounded-xl font-bold text-xl hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 inline-block"
