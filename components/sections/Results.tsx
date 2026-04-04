@@ -14,7 +14,7 @@ const Results: React.FC<ResultsProps> = ({ heading }) => {
     {
       name: 'Rahul Kumar',
       score: '93.8%',
-      image: '/gurukul/suraj_singh_93.8.jpg',
+      image: '/gurukul/SURAJ_SINGH_93.8.jpg',
     },
     {
       name: 'Ankita Pandit',
